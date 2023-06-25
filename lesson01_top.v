@@ -30,8 +30,8 @@ module lesson01_top (
   always @(posedge clk) begin
     cnt <= cnt + 2'b01;
   end
-  assign boton1 = (cnt[1] == 1'b0);
-  assign boton2 = (cnt[1] == 1'b1);
+  assign boton1 = cnt[0];
+  assign boton2 = cnt[1];
   /////////////////////////////////////
   
   
