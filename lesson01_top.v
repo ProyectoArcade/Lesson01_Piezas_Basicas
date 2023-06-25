@@ -37,12 +37,15 @@ module lesson01_top (
   /////////////////////////////////////
   
   
-  assign logic_gate_OR = boton1 | boton2;
-  assign logic_gate_AND = boton1 & boton2;
-  assign logic_gate_NOT = ~boton1;
-  assign logic_gate_NAND = ~(boton1 & boton2);
-  assign logic_gate_NOR = ~(boton1 | boton2);
-  assign logic_gate_XOR = boton1 ^ boton2;
-  assign logic_gate_XNOR = ~(boton1 ^ boton2);
+  assign logic_gate_OR = boton1 | boton2;     //Puerta lógica OR
+  assign logic_gate_AND = boton1 & boton2;    //Puerta lógica AND
+  assign logic_gate_XOR = boton1 ^ boton2;    //Puerta lógica XOR o OR exclusiva 
+  assign logic_gate_NOT = ~boton1;            //Puerta lógica NOT, solo un operando
+  assign logic_gate_NAND = ~(boton1 & boton2);//Puerta lógica NAND o AND invertida
+  assign logic_gate_NOR = ~(boton1 | boton2); //Puerta lógica NOR o OR invertida
+  assign logic_gate_XNOR = ~(boton1 ^ boton2);//Puerta lógica XNOR o NOR exclusiva
+  
+  //si se conectara cada una de las salidas a un diodo LED se podría visualizar las
+  //acciones de los botones en los LED.
 endmodule
   
