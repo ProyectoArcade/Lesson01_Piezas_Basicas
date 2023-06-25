@@ -1,4 +1,10 @@
 //lesson01_top.v
+//Esta primera lección explora los piezas fundamentales
+//del diseño digital, las puertas lógicas. Se trata de funciones
+//cuyos operandos solo puede tomar dos valores o estados, verdadero "1", o
+//falso "0". El resultado de estas funciones solo puede tomar
+//uno de estos valores también. Por esto tambien se le denomina
+//lógica binaria.
 //Material del Workshop: "Como crear tu propio juego Arcade (y sobrevivir al intento)"
 `include "simular_pulsaciones_botones.v"
 
