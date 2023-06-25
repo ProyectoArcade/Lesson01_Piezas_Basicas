@@ -1,5 +1,7 @@
 //lesson01_top.v
 //Material del Workshop: "Como crear tu propio juego Arcade (y sobrevivir al intento)"
+`include "simular_pulsaciones_botones.v"
+
 module lesson01_top (
   input wire clk,
   input wire reset,
@@ -27,11 +29,11 @@ module lesson01_top (
   
   //logica para simular las posibles combinaciones de pulsaciones de 
   //los dos botones
-  always @(posedge clk) begin
-    cnt <= cnt + 2'b01;
-  end
-  assign boton1 = cnt[0];
-  assign boton2 = cnt[1];
+  simular_pulsaciones_botones spb(
+    .clk(clk),
+    .boton1(boton1),
+    .boton2(boton2)
+  );
   /////////////////////////////////////
   
   

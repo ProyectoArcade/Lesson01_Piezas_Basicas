@@ -4,7 +4,7 @@ module simular_pulsaciones_botones(
   input wire clk,
   output wire boton1,
   output wire boton2
-)
+);
   reg [1:0] cnt;
   
   //logica para simular las posibles combinaciones de pulsaciones de 
