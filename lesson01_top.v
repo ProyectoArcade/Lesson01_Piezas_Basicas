@@ -6,6 +6,7 @@
 //uno de estos valores también. Por esto tambien se le denomina
 //lógica binaria.
 //Material del Workshop: "Como crear tu propio juego Arcade (y sobrevivir al intento)"
+
 `include "simular_pulsaciones_botones.v"
 
 module lesson01_top (
